@@ -1,7 +1,5 @@
 public static int loadBalance(int procs, int[] tasks, int[] partitions){	
 		
-		//int sum = 0;
-		//for(int i : tasks){ sum += i; }
 		int optimalSum = bSearch(tasks, procs, Integer.MAX_VALUE);
 		buildResult(tasks, partitions, optimalSum);
 		return optimalSum;
